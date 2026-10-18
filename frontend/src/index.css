@@ -1,0 +1,215 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.auth-page {
+  max-width: 360px;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auth-page .google-signin {
+  margin-top: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #1a56db;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.link-button {
+  background: none;
+  color: #1a56db;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.link-button.danger {
+  color: #c0362c;
+}
+
+.form-error {
+  color: #c0362c;
+  font-size: 0.9rem;
+}
+
+.divider {
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkin-form {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkin-form h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.checkin-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.checkin-form legend {
+  font-size: 0.85rem;
+  color: #555;
+  padding: 0;
+}
+
+.checkin-form .checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.checkin-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkin-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #999;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.checkin-card.status-active {
+  border-left-color: #1a7d3a;
+}
+
+.checkin-card.status-triggered {
+  border-left-color: #c0362c;
+}
+
+.checkin-card.status-cancelled {
+  border-left-color: #999;
+}
+
+.checkin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.checkin-card-header h3 {
+  margin: 0;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #555;
+  white-space: nowrap;
+}
+
+.checkin-message {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.checkin-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.checkin-meta dt {
+  color: #888;
+}
+
+.checkin-meta dd {
+  margin: 0;
+}
+
+.checkin-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.empty-state {
+  color: #888;
+  font-style: italic;
+}
